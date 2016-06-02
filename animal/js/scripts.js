@@ -5,18 +5,21 @@ $(document).ready(function(){
     event.preventDefault();
 
     if (animalInput === "Turtles") {
-      $("#animaldisplay").find(".hideImg").hide();
+      $(".hideImg").hide();
       $('#turtles').show();
     }
     else if (animalInput === "Snakes") {
-      $("#animaldisplay").find(".hideImg").hide();
+      $(".hideImg").hide();
       $('#snakes').show();
     }
     else if (animalInput === "Insects") {
-      $("#animaldisplay").find(".hideImg").hide();
+      $(".hideImg").hide();
       $('#insects').show();
     }
 
+    else {
+      $(".hideImg").hide();
+    }
   });
 
 });
